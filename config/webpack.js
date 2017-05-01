@@ -11,7 +11,11 @@ module.exports = env => {
 	return {
 		entry: {
 			app: './src/index.js',
-			vendor: [// pull these to a `vendor.js` file
+			vendor: [
+				// pull these to a `vendor.js` file
+				'moment',
+				'moment-duration-format',
+				'moment-timezone',
 				'preact']
 		},
 		output: {
