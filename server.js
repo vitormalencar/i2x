@@ -8,7 +8,7 @@ app.use(express.static('dist/'));
 
 app.use('/*', (req, res) => {
 	if (req.headers['x-forwarded-proto'] !== 'https') {
-		res.redirect(301, 'https://ix2-challenge.herokuapp.com/' + req.url);
+		res.redirect(301, 'https://i2x-app.herokuapp.com/' + req.url);
 	}
 	res.sendFile(__dirname + '/index.html');
 });
