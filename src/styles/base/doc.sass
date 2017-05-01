@@ -1,0 +1,73 @@
+/**
+ * Global document styles
+ */
+
+%fullscreen
+	width: 100vw
+	min-height: 100vh
+	overflow-x: hidden
+
+// The base font-size is set at 62.5% for having the convenience
+// of sizing rems in a way that is similar to using px: 1.6rem = 16px
+html
+	box-sizing: border-box
+	font-size: 62.5%
+
+
+// Default body styles
+body
+	color: $color-secondary
+	background: $offwhite
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif
+  font-size: 1.6em
+	letter-spacing: .01em
+	line-height: 1.6
+	@extend %fullscreen
+	font-weight: 300
+	+font-smoothing()
+
+#loader
+  z-index: 0
+  font-size: 0
+
+a
+	color: $primary
+
+li, p
+	margin-bottom: $base-spacing/2
+
+img
+	user-select: none
+	max-width: 100%
+
+blockquote
+	border-left: 4px solid md-color('grey', '200')
+	padding: $base-spacing/2 $base-spacing
+	padding-right: 0
+
+// Spacing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+dd,
+dt,
+li
+	margin-bottom: 1.0rem
+
+fieldset,
+input,
+select,
+textarea
+	margin-bottom: 1.5rem
+
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul
+	margin-bottom: 2.5rem
