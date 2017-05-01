@@ -45,6 +45,6 @@
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.3.0"
   },
-  "description": "ix2 challenge",
+  "description": "i2x challenge",
   "main": "index.js"
 }
