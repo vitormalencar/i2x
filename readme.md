@@ -33,14 +33,14 @@ Progressive Web Apps are installable and live on the user's home screen, without
 - The app has a manifest declared
 - The manifest has a short_name, 144 pixel icon and a type of 'image/png'
 
-- [App install example](docs/pwa.mp4)
+- [App install example](https://vimeo.com/215742817)
 
 
 When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.
 
 A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users.
 
-- [App runing offline example](docs/pwa.mp4)
+- [App runing offline example](https://vimeo.com/215742765)
 
 
 # Motivation
