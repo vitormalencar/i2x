@@ -34,6 +34,8 @@ export default class Login extends Component {
 				.then((response) => authenticateUser(response.data.token))
 				.then(response => this.redirect())
 				.catch(error => console.log(error));
+		}else{
+			alert('email and password required');
 		}
 	};
 
@@ -42,9 +44,9 @@ export default class Login extends Component {
 		// redirect if the user is logged in
 		if (isLoggedIn)
 			this.redirect();
-
 	}
 
+	// pass state to render
 	render({},{email,password}) {
 		return (
 			<div className="page page__login">
