@@ -22,7 +22,7 @@ const RecordingsItem = ({number, record}) => (
 
 		<br/>
 
-		<span>Created :{moment(record.created).format('YYYY/MM/DD')}</span>
+		<span>Created: {moment(record.created).format('YYYY/MM/DD')}</span>
 
     <p>Duration: {moment.duration(record.duration, "seconds").format("mm")} Minutes</p>
 

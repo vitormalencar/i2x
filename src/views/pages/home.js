@@ -20,7 +20,6 @@ export default class extends Component {
 		.catch(error => console.log(error));
 	}
 
-
 	render(props,{recordings,loading}) {
 
 		if(loading)
