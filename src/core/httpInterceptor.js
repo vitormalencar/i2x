@@ -1,5 +1,10 @@
 import {getToken, deauthenticateUser} from '../utils/auth';
 
+/**
+   * Handle requests and update jwt token
+   *
+   * @param {object} token
+*/
 export const requestInterceptor = (request) => {
 	let token = getToken();
 
@@ -9,6 +14,11 @@ export const requestInterceptor = (request) => {
 	return request;
 }
 
+/**
+   * Error handler for http requests based on http-status
+   *
+   * @param {object} error
+*/
 export const errorHandler = (error) => {
 	if (error.response && error.response.status === 401) {
     // User is not authenticated
