@@ -34,7 +34,7 @@ export default class Login extends Component {
 				.then((response) => authenticateUser(response.data.token))
 				.then(response => this.redirect())
 				.catch(error => console.log(error));
-		}else{
+		} else {
 			alert('email and password required');
 		}
 	};
@@ -46,7 +46,7 @@ export default class Login extends Component {
 			this.redirect();
 	}
 
-	// pass state to render
+	// pass state to render thanks to preact
 	render({},{email,password}) {
 		return (
 			<div className="page page__login">
