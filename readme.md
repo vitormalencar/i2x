@@ -1,8 +1,54 @@
 # I2X-starter
-
-> I2X challenge: [live demo](https://i2x-app.herokuapp.com/)
+> I2X challenge: progressive web app made with preact  [live demo](https://i2x-app.herokuapp.com/)
 
 ---
+
+# Guide
+- [Motivation](#motivation)
+- [Installation](#install)
+- [Development Workflow](#Development)
+- [Folder Structure](#structure)
+
+# Stack
+- [Preact](https://preactjs.com/)
+- [MomentJS](https://momentjs.com/)
+- [Webpack-2](https://webpack.js.org/)
+- [sw-precache](https://github.com/GoogleChrome/sw-precache)
+
+# Features
+* SASS & Autoprefixer
+* Offline Caching (via `serviceWorker`)
+* Asset Versioning (aka "cache-busting")
+* ES2015 (ES6) and ES2016 (ES7) support
+* Webpack Bundle Analysis (see [dashboard](#dashboard))
+* Hot Module Replacement (HMR) for all files
+* Preact's [Developer Tools](#preact-developer-tools)
+* [Lighthouse](https://github.com/GoogleChrome/lighthouse) certified!
+
+# Motivation
+
+### why progressive webapp ?
+
+Progressive Web Apps are user experiences that have the reach of the web, and are:
+Reliable - Load instantly and never show the downasaur, even in uncertain network conditions.
+Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.
+Engaging - Feel like a natural app on the device, with an immersive user experience.
+This new level of quality allows Progressive Web Apps to earn a place on the user's home screen.
+
+**Google** has been collecting PWA case studies and the results are pretty impressive.
+
+**Alibaba** is the global leader in B2B trade. Recently, they upgraded to a PWA:
+  - 76% more web conversions
+  - 30% more monthly active users on Android, 14% more on iOS
+  - 4X higher interaction rate from Add to Homescreen
+
+**Housing.com** is one of the leading real estate platforms in India. After implementing their PWA:
+- 38% more conversions
+- 40% lower bounce rate
+- 10% longer average session
+- 30% faster page load
+
+for more really awesome examples see [pwastats](https://www.pwastats.com/)
 
 
 ## Install
@@ -17,17 +63,6 @@ npm start
 
 > :exclamation: Use [Yarn](https://yarnpkg.com/) to install dependencies 3x faster than NPM!
 
-## Features
-
-* Offline Caching (via `serviceWorker`)
-* SASS & Autoprefixer
-* Asset Versioning (aka "cache-busting")
-* ES2015 (ES6) and ES2016 (ES7) support
-* Webpack Bundle Analysis (see [dashboard](#dashboard))
-* Hot Module Replacement (HMR) for all files
-* Preact's [Developer Tools](#preact-developer-tools)
-* [Lighthouse](https://github.com/GoogleChrome/lighthouse) certified
-  ![lightouse](docs/score.png)
 
 ## Development
 
@@ -53,13 +88,18 @@ $ npm start
 
 Runs your application (from the `dist` directory) in the browser.
 
-#### watch
+#### dev
 
 ```
 $ npm run dev
 ```
 
 Like [`start`](#start), but will auto-compile & auto-reload the server after any file changes within the `src` directory.
+
+# Speed tests
+ ![lightouse](docs/lg_score.png)
+
+ ![pingdom](docs/pingdom_score.png)
 
 ### Dashboard
 
