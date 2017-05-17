@@ -3,6 +3,13 @@
 
 ---
 
+# bundle sizes & performance
+```
+Bundle Size:            64.4 kB  | Gzip size 20.3 kB Gzipped
+pagespeed:              100
+lighthouse:             100
+```
+
 # Guide
 - [Motivation](#motivation)
 - [Installation](#install)
