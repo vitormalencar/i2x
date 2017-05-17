@@ -14,7 +14,7 @@ export default class extends Component {
 
 	updateRecordings = (recordings) => this.setState({recordings, loading:false});
 
-	componentWillMount() {
+	componentDidMount() {
 		loadRecordingsList()
 		.then(response => this.updateRecordings(response.data.results))
 		.catch(error => console.log(error));
