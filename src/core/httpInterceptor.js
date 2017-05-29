@@ -3,7 +3,7 @@ import {getToken, deauthenticateUser} from '../utils/auth';
 /**
    * Handle requests and update jwt token
    *
-   * @param {object} token
+   * @param {object} request
 */
 export const requestInterceptor = (request) => {
 	let token = getToken();
