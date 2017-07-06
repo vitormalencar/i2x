@@ -1,5 +1,5 @@
 # I2X-starter
-> I2X challenge: progressive web app made with preact  [live demo](https://i2x-app.herokuapp.com/)
+> I2X challenge: progressive web app made with preact  [live demo](https://i2x.surge.sh/)
 
 ---
 
