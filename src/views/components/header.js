@@ -9,7 +9,7 @@ const logout = () => {
 
 const Header = () => (
 	<header class="header">
-		<h1>I2X</h1>
+		<h1>PODCASTS</h1>
 		<nav>
 			<a href='#' onClick={logout}>Logout</a>
 		</nav>
