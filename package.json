@@ -7,7 +7,7 @@
   "author": "vitor alencar <vitor.maia.alencar@gmail.com> (https://vitormalencar.com)",
   "scripts": {
     "build": "webpack --env.production --config config/webpack",
-    "deploy": "yarn build && surge --domain https://i2x.surge.sh  dist/",
+    "deploy": "yarn build && surge --domain https://podcasts.surge.sh  dist/",
     "start": "npm run build && NODE_ENV=production node server.js",
     "dev": "webpack-dashboard -- webpack-dev-server --config config/webpack"
   },
@@ -45,6 +45,6 @@
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.3.0"
   },
-  "description": "i2x challenge",
+  "description": "my podcast apps",
   "main": "index.js"
 }
