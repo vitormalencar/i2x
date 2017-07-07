@@ -1,5 +1,5 @@
-# Podcast pwa
-> progressive web app made with preact  [live demo](https://i2x-app.herokuapp.com/)
+# I2X
+> progressive web app made with preact  [live demo](https://i2x.surge.sh/)
 
 ---
 
