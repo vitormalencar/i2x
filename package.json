@@ -8,6 +8,7 @@
   "scripts": {
     "build": "webpack --env.production --config config/webpack",
     "deploy": "yarn build && surge --domain https://podcasts.surge.sh  dist/",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages",
     "start": "npm run build && NODE_ENV=production node server.js",
     "dev": "webpack-dashboard -- webpack-dev-server --config config/webpack"
   },
