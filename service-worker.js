@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/1900b64045cee0e47f6f2da6f3ae8e25.png","1900b64045cee0e47f6f2da6f3ae8e25"],["/app.f7b176daf735f4f10330.js","554a9821f2650522a22cf5ce6a1f07ca"],["/favicon.ico","57136deb48caaeda885c8e510f78c1e6"],["/icon/android-chrome-192x192.png","e48b90685f6bd092b739abe529fbd741"],["/icon/android-chrome-512x512.png","2be397d4fb5338e92b1e2a1b3eecc513"],["/icon/apple-touch-icon.png","d913df1974760448a1b13d8b8eeead98"],["/icon/favicon-16x16.png","21bcf0d7c16b67af818941259bd6d183"],["/icon/favicon-32x32.png","ee90b0f601c6cebaa155cce7396592f0"],["/icon/mstile-150x150.png","1d6970f54c9ee5bb25146b2b2f097789"],["/img/i2x-logo-dark.png","1900b64045cee0e47f6f2da6f3ae8e25"],["/index.html","c0091d080fd5170219932d7628f4abac"],["/manifest.json","359bbf94daf6fa55d63efcdb11dd8608"],["/styles.f7b176daf735f4f10330.css","1eb81eb54e56b9aeb73b02f1a3125222"],["/vendor.f7b176daf735f4f10330.js","a3184f3c2f2f38385ef13da52f5fbdf1"]];
+var precacheConfig = [["1900b64045cee0e47f6f2da6f3ae8e25.png","1900b64045cee0e47f6f2da6f3ae8e25"],["app.3490df812ae03a87f96e.js","4fce1b71813500988054f86747a3d31b"],["favicon.ico","57136deb48caaeda885c8e510f78c1e6"],["icon/android-chrome-192x192.png","e48b90685f6bd092b739abe529fbd741"],["icon/android-chrome-512x512.png","2be397d4fb5338e92b1e2a1b3eecc513"],["icon/apple-touch-icon.png","d913df1974760448a1b13d8b8eeead98"],["icon/favicon-16x16.png","21bcf0d7c16b67af818941259bd6d183"],["icon/favicon-32x32.png","ee90b0f601c6cebaa155cce7396592f0"],["icon/mstile-150x150.png","1d6970f54c9ee5bb25146b2b2f097789"],["img/i2x-logo-dark.png","1900b64045cee0e47f6f2da6f3ae8e25"],["index.html","93fcc67b5b26ea9ea1feb434175016aa"],["manifest.json","359bbf94daf6fa55d63efcdb11dd8608"],["styles.3490df812ae03a87f96e.css","1eb81eb54e56b9aeb73b02f1a3125222"],["vendor.3490df812ae03a87f96e.js","6b8df9b9f6a39e607a61ace97087e1ca"]];
 var cacheName = 'sw-precache-v2-sw-precache-webpack-plugin-' + (self.registration ? self.registration.scope : '');
 
 
@@ -143,10 +143,10 @@ self.addEventListener('install', function(event) {
         );
       });
     }).then(function() {
-      
+
       // Force the SW to transition from installing -> active state
       return self.skipWaiting();
-      
+
     })
   );
 });
@@ -166,9 +166,9 @@ self.addEventListener('activate', function(event) {
         );
       });
     }).then(function() {
-      
+
       return self.clients.claim();
-      
+
     })
   );
 });
@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
 
 // *** Start of auto-included sw-toolbox code. ***
-/* 
+/*
  Copyright 2016 Google Inc. All Rights Reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -253,7 +253,3 @@ self.addEventListener('fetch', function(event) {
 // Runtime cache configuration, using the sw-toolbox library.
 
 toolbox.router.get(/^https:\/\/i2x-challenge.herokuapp\.com\/ai/, toolbox.cacheFirst, {});
-
-
-
-
