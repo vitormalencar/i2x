@@ -1,4 +1,7 @@
 # I2X
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/vitormalencar/i2x.svg)](https://greenkeeper.io/)
+
 > progressive web app made with preact  [live demo](https://i2x.surge.sh/)
 
 ---
